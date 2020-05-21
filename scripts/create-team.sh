@@ -5,7 +5,7 @@ set -o errexit
 : ${1?"Usage: $0 <TEAM NAME>"}
 
 TEAM_NAME=$1
-TEMPLATE="team1"
+TEMPLATE="devops-blapi"
 REPO_ROOT=$(git rev-parse --show-toplevel)
 TEAM_DIR="${REPO_ROOT}/cluster/${TEAM_NAME}/"
 
