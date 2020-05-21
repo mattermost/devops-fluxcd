@@ -15,5 +15,5 @@ spec:
             - --sync-interval=5m
             - --ssh-keygen-dir=/var/fluxd/keygen
             - --git-branch=master
-            - --git-path=eks-data-eng-cluster
+            - --git-path=cluster
             - --git-url=git@github.com:mattermost/devops-fluxcd
