@@ -17,3 +17,4 @@ spec:
             - --git-branch=master
             - --git-path=cluster
             - --git-url=git@github.com:mattermost/devops-fluxcd
+            - --ci-skip

@@ -17,6 +17,7 @@ spec:
             - --k8s-allow-namespace=devops-blapi
             - --git-url=git@github.com:mattermost/blapi
             - --git-branch=master
+            - --ci-skip
 ---
 apiVersion: rbac.authorization.k8s.io/v1beta1
 kind: RoleBinding
