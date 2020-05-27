@@ -9,7 +9,4 @@ spec:
         - name: flagger
           args:
             - -mesh-provider=kubernetes
-            - -metrics-server=http://flagger-prometheus:9090
-            - -slack-user=flagger
-            - -slack-channel=
-            - -slack-url=
+            - -metrics-server=http://prometheus-k8s.monitoring.svc:9090
