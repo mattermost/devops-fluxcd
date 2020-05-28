@@ -1,3 +1,7 @@
+# Summary of changes for Mattermost
+kubectl create ns test
+kubectl apply -k github.com/weaveworks/flagger/kustomize/tester
+
 # fluxcd-multi-tenancy
 
 [![test](https://github.com/fluxcd/multi-tenancy/workflows/test/badge.svg)](https://github.com/fluxcd/multi-tenancy/blob/master/.github/workflows/test.yml)

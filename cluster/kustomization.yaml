@@ -1,4 +1,5 @@
 bases:
-  - ./flagger/
+  # - ./flagger/
   - ./common/
   - ./devops-blapi/
+  - ./test-blapi/
