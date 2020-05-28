@@ -1,7 +1,7 @@
 apiVersion: rbac.authorization.k8s.io/v1beta1
 kind: ClusterRoleBinding
 metadata:
-  name: flux-devops-blapi
+  name: flux-test-blapi
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
@@ -14,7 +14,7 @@ subjects:
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
-  name: flux-psp-devops-blapi
+  name: flux-psp-test-blapi
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole

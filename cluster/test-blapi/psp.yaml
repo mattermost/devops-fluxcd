@@ -1,7 +1,7 @@
 apiVersion: policy/v1beta1
 kind: PodSecurityPolicy
 metadata:
-  name: default-psp-devops-blapi
+  name: default-psp-test-blapi
   annotations:
     seccomp.security.alpha.kubernetes.io/allowedProfileNames: '*'
 spec:
@@ -30,22 +30,22 @@ spec:
 kind: ClusterRole
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: default-psp-devops-blapi
+  name: default-psp-test-blapi
 rules:
   - apiGroups: ['policy']
     resources: ['podsecuritypolicies']
     verbs:     ['use']
     resourceNames:
-      - default-psp-devops-blapi
+      - default-psp-test-blapi
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
-  name: default-psp-devops-blapi
+  name: default-psp-test-blapi
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
-  name: default-psp-devops-blapi
+  name: default-psp-test-blapi
 subjects:
   - kind: ServiceAccount
     name: default
