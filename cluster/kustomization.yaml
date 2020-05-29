@@ -3,3 +3,4 @@ bases:
   - ./common/
   - ./devops-blapi/
   - ./test-blapi/
+  - ./prod-blapi/
